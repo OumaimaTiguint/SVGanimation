@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+#left-leg {
+    animation: left 1s infinite linear alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#right-leg {
+    animation: right 1s infinite linear alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#woman {
+    animation: woman 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+@keyframes left {
+    from {
+        transform: rotate(0deg) translateX(0);
+    }
+    to {
+        transform: rotate(-30deg) translateX(20%);
+    }
+}
+@keyframes right {
+    from {
+        transform: rotate(0deg) translateX(0%);
+    }
+    to {
+        transform: rotate(22deg) translateX(-10%);
+    }
+}
+@keyframes woman {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(1%)
+    }
+}
